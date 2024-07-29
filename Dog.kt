@@ -1,7 +1,9 @@
-class Dog(private val ownerName: String) {
+class Dog{
+
+    var owner: Human? = null
     var name: String? = null
 
     fun sayWoof(){
-        println("Hi $ownerName, my name is $name")
+        println("Hi my name is $name and my owner is ${owner?.name}")
     }
 }
